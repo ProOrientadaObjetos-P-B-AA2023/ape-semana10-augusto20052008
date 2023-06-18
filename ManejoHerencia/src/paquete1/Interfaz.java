@@ -49,14 +49,24 @@ public class Interfaz {
     public static void manejoErrores(int tipoError) {
         switch (tipoError) {
             case 1 -> {
-                System.out.println();
-                System.out.println("ERROR (No ingrese letras ni simbolos.)");
-                System.out.println();
+                System.out.println("┌─────────────────────────────────────┐");
+                System.out.println("│ERROR (No ingrese letras ni simbolos)│");
+                System.out.println("└─────────────────────────────────────┘");
             }
             case 2 -> {
-                System.out.println();
-                System.out.println("ERROR (Escoga una opcion disponible)");
-                System.out.println();
+                System.out.println("┌─────────────────────────────────────┐");
+                System.out.println("│ERROR (Escoga una opcion disponible).│");
+                System.out.println("└─────────────────────────────────────┘");
+            }
+            case 3 -> {
+                System.out.println("┌──────────────────────────────────────────┐");
+                System.out.println("│ERROR (Ingrese un numero decimal positivo)│");
+                System.out.println("└──────────────────────────────────────────┘");
+            }
+            case 4 -> {
+                System.out.println("┌──────────────────────────────────────────┐");
+                System.out.println("│ERROR (Ingrese un numero entero positivo).│");
+                System.out.println("└──────────────────────────────────────────┘");
             }
         }
     }
